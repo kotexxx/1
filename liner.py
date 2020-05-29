@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[12]:
-
-
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -14,10 +8,11 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 
+#「豚のトレーニングデータ」
 dh = pd.read_csv("Traindatafor05072019.csv",header=None)
 
 
-
+#体重を限定するとき
 #a = df[df.iloc[:,16] <120]
 
 #b = a[a.iloc[:,16] >= 80]
@@ -105,16 +100,6 @@ plt.plot(QK,Yprediction,color='blue')
 plt.ylabel('Actual')
 plt.xlabel('Pre')
 plt.show()
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
 
 
 
